@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MoedaComponent } from './moeda/moeda.component';
+import { D3Component } from './d3/d3.component';
+import { D4Component } from './d4/d4.component';
+import { D5Component } from './d5/d5.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     InicioComponent,
-    MoedaComponent
+    MoedaComponent,
+    D3Component,
+    D4Component,
+    D5Component
   ],
   imports: [
     BrowserModule,

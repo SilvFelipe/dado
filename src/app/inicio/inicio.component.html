@@ -6,19 +6,85 @@
   Click Me!
 </button> -->
 
-<div class="container mx-auto">
+<div class="container mx-auto h-auto">
 
-  <div class="grid grid-cols-4">
+  <div class="grid grid-cols-4 grid-rows-2">
 
-    <div class="col-span-1">
+    <div class="col-span-1 row-span-2 flex justify-center flex-col">
 
-      <img [src]=url (mouseover)="toGif()" (mouseout)="toImg()">
+      <div class="col-span-1 flex justify-center align-middle">
+
+        <img
+          [src]="moeda.url"
+          alt="Moeda"
+          (mouseover)="moeda.url = moeda.gif"
+          (mouseover)="lados = '2'"
+          (mouseout)="moeda.url = moeda.img"
+          (mouseout)="lados = ''"
+          [routerLink]="['/moeda']"
+          class="hover:cursor-pointer"
+        />
+
+      </div>
+
+      <div class="col-span-1 flex justify-center align-middle">
+
+        <img [src]="dado3.url"
+        (mouseover)="dado3.url = dadoGif"
+        (mouseover)="lados = '3'"
+        (mouseout)="dado3.url = dado3.img"
+        (mouseout)="lados = ''"
+        [routerLink]="['/d3']"
+        class="hover:cursor-pointer w-3/5">
+
+
+      </div>
 
     </div>
 
-    <div class="col-span-2"></div>
+    <div class="col-span-2 row-span-2 relative flex justify-center">
 
-    <div class="col-span-1">as</div>
+      <img src="../../assets/bg.png" class="w-4/6"/>
+      <div class="absolute z-1 bg-black/50 font-bold text-5xl font-sans text-white top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
+        <p *ngIf="lados == '2'">2 LADOS</p>
+        <p *ngIf="lados == '3'">3 LADOS</p>
+        <p *ngIf="lados == '4'">4 LADOS</p>
+        <p *ngIf="lados == '5'">5 LADOS</p>
+      </div>
+
+    </div>
+
+    <div class="col-span-1 row-span-2 flex justify-center flex-col">
+
+      <div class="col-span-1 flex justify-center align-middle">
+
+        <img
+          [src]="dado4.url"
+          alt="Moeda"
+          (mouseover)="dado4.url = dadoGif"
+          (mouseover)="lados = '4'"
+          (mouseout)="dado4.url = dado4.img"
+          (mouseout)="lados = ''"
+          [routerLink]="['/d4']"
+          class="hover:cursor-pointer w-3/5"
+        />
+
+      </div>
+
+      <div class="col-span-1 flex justify-center align-middle">
+
+        <img [src]="dado5.url"
+        (mouseover)="dado5.url = dadoGif"
+        (mouseover)="lados = '5'"
+        (mouseout)="dado5.url = dado5.img"
+        (mouseout)="lados = ''"
+        [routerLink]="['/d5']"
+        class="w-3/5">
+
+
+      </div>
+
+    </div>
 
   </div>
 

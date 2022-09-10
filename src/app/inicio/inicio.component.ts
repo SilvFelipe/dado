@@ -20,14 +20,31 @@ export class InicioComponent implements OnInit {
     console.log("Oi");
   }
 
-  url: string = "../../assets/coinflip.png";
+  dadoGif: string = "../../assets/dicerolld4.webp"
 
-  toGif() {
-    this.url = "../../assets/coinflip.gif";
+  moeda: any = {
+    url: "../../assets/coinflip.png",
+    img: "../../assets/coinflip.png",
+    gif: "../../assets/coinflip.gif"
   }
 
-  toImg() {
-    this.url = "../../assets/coinflip.png";
+  dado3: any = {
+    url: "../../assets/d3.png",
+    img: "../../assets/d3.png",
   }
+
+  dado4: any = {
+    url: "../../assets/d4.png",
+    img: "../../assets/d4.png",
+  }
+
+  dado5: any = {
+    url: "../../assets/d5.png",
+    img: "../../assets/d5.png",
+  }
+
+  lados: string = "";
+
+  heigth: number = 1.0125;
 
 }

@@ -1,1 +1,53 @@
-<h1 class="text-white font-bold text-9xl">Moeda funciona</h1>
+<div class="flex justify-center">
+
+  <div class="mt-5">
+    <label for="ouro" class="text-white ml-5">Acumuladores da Ouro</label>
+    <input type="checkbox" id="ouro" value="ouro" class="mx-3"
+    (change)="setEmissary('ouro')"
+    [disabled]="status.ouro">
+  </div>
+
+  <div class="mt-5">
+    <label for="almas" class="text-white ml-10">Ordem das Almas</label>
+    <input type="checkbox" id="almas" value="almas" class="mx-3"
+    (change)="setEmissary('almas')"
+    [disabled]="status.almas"
+    >
+  </div>
+
+  <div class="mt-5">
+    <label for="mercante" class="text-white ml-10">Aliança Mercante</label>
+    <input type="checkbox" id="mercante" value="mercante" class="mx-3"
+    (change)="setEmissary('mercante')"
+    [disabled]="status.mercante">
+  </div>
+
+  <div class="mt-5">
+    <label for="atena" class="text-white ml-10">Fortuna de Atena</label>
+    <input type="checkbox" id="atena" value="atena" class="mx-3"
+    (change)="setEmissary('atena')"
+    [disabled]="status.atena">
+  </div>
+
+  <div class="mt-5">
+    <label for="ceifador" class="text-white ml-10">Ossos do Ceifador</label>
+    <input type="checkbox" id="ceifador" value="ceifador" class="mx-3"
+    (change)="setEmissary('ceifador')"
+    [disabled]="status.ceifador">
+  </div>
+
+  <div class="mt-5">
+    <label for="sim" class="text-white ml-10">Sim</label>
+    <input type="checkbox" id="sim" value="sim" class="mx-3"
+    (change)="setEmissary('sim')"
+    [disabled]="status.sim">
+  </div>
+
+  <div class="mt-5">
+    <label for="nao" class="text-white ml-10">Não</label>
+    <input type="checkbox" id="nao" value="nao" class="mx-3"
+    (change)="setEmissary('nao')"
+    [disabled]="status.nao">
+  </div>
+
+</div>
